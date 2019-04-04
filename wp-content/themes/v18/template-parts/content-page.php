@@ -14,6 +14,17 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
+    <div class="post__date">
+				<span><?php echo get_post_field('Даты');  ?>
+				</span>
+        <!--                <span>--><?php //if( isset($metas['Даты']) ){
+		//					echo $metas['Даты'][0];};  ?>
+        <!--				</span>-->
+		<?php echo get_post_field('Месяц-или-Период');  ?>
+
+        <!--                --><?php //if( isset($metas['Месяц-или-Период']) ){
+		//					echo $metas['Месяц-или-Период'][0];};  ?>
+    </div>
 	<?php v18_post_thumbnail(); ?>
 
 	<div class="entry-content">
@@ -25,10 +36,12 @@
 			'after'  => '</div>',
 		) );
 		?>
-	</div><!-- .entry-content -->
+        <a href="<?php echo get_post_field('Ссылка на скачивание');  ?>" class="events__details"><?php echo get_post_field('Текст ссылки');  ?></a>
+
+    </div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+		<footer class="entry-footer visually-hidden">
 			<?php
 			edit_post_link(
 				sprintf(

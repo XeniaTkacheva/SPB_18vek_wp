@@ -46,24 +46,24 @@ function v18_create_post_type() {
 //		)
 //	);
 	// create a new taxonomy
-	register_taxonomy(
-		'v18-year',
-		'post',
-		array(
-			'label' => __( 'Year' ),
-			'name' => __( 'Years' ),
-			'singular name' => __( 'Year' ),
-			'all_items' => __('All years'),
-			'edit_item' => __('Edit value'),
-			'add_new_item' => __('Add year'),
-			'view_item' => __('View value'),
-
-			'rewrite' => array( 'slug' => 'year' ),
-			'hierarchical' => true,
-			'show_in_rest' => true,
-			'sort' => true,
-		)
-	);
+//	register_taxonomy(
+//		'v18-year',
+//		'post',
+//		array(
+//			'label' => __( 'Year' ),
+//			'name' => __( 'Years' ),
+//			'singular name' => __( 'Year' ),
+//			'all_items' => __('All years'),
+//			'edit_item' => __('Edit value'),
+//			'add_new_item' => __('Add year'),
+//			'view_item' => __('View value'),
+//
+//			'rewrite' => array( 'slug' => 'year' ),
+//			'hierarchical' => true,
+//			'show_in_rest' => true,
+//			'sort' => true,
+//		)
+//	);
 }
 add_action( 'init', 'v18_create_post_type' );
 
