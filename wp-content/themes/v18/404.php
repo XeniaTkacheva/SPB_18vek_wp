@@ -7,19 +7,19 @@
  * @package v18
  */
 
-get_header();
+get_header('page');
 ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
 			<section class="error-404 not-found">
-				<header class="page-header">
+				<header class="wp-page-header">
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'v18' ); ?></h1>
-				</header><!-- .page-header -->
+				</header><!-- .wp-page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'v18' ); ?></p>
+					<p><?php esc_html_e( 'Похоже, что ничего не было найдено в этом месте. Может быть, попробуйте одну из ссылок ниже или поиск?', 'v18' ); ?></p>
 
 					<?php
 					get_search_form();
@@ -28,7 +28,7 @@ get_header();
 					?>
 
 					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'v18' ); ?></h2>
+						<h2 class="widget-title"><?php esc_html_e( 'Популярные категории', 'v18' ); ?></h2>
 						<ul>
 							<?php
 							wp_list_categories( array(
@@ -44,10 +44,10 @@ get_header();
 
 					<?php
 					/* translators: %1$s: smiley */
-					$v18_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'v18' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$v18_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
+//					$v18_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'v18' ), convert_smilies( ':)' ) ) . '</p>';
+//					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$v18_archive_content" );
+//
+//					the_widget( 'WP_Widget_Tag_Cloud' );
 					?>
 
 				</div><!-- .page-content -->
@@ -57,4 +57,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_footer();
+get_footer('all');

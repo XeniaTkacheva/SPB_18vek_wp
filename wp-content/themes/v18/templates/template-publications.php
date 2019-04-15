@@ -8,7 +8,7 @@ get_header('page');
 
 	<section class="heading">
 		<div class="heading__wrap">
-			<h2 class="heading__title heading__title--publications">Публикации</h2>
+			<h2 id="publications" class="heading__title heading__title--publications">Публикации</h2>
 			<p class="heading__logo">XVIII <span class="dot">.</span></p>
 		</div>
 	</section>

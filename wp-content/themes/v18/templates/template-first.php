@@ -31,47 +31,36 @@ get_header('main');
               <img class="tasks__image" src="<?php echo esc_url( V18_IMG_DIR . '/'); ?>image2@1x.png" srcset="<?php echo esc_url( V18_IMG_DIR . '/'); ?>image2@2x.png 2x" alt="Гравюра" width="232" height="197">
             </picture>
           </div>
-          <div class="tasks__pagin">
-            <ul class="tasks__toggles default-list">
-              <li class="tasks__toggle tasks__toggle--current" onclick="openTask(event, 'task1')" onkeydown="openTask1(event, 'task1')" tabindex="0">1.</li>
-              <li class="tasks__toggle" onclick="openTask(event, 'task2')" onkeydown="openTask1(event, 'task2')" tabindex="0">2.</li>
-              <li class="tasks__toggle" onclick="openTask(event, 'task3')" onkeydown="openTask1(event, 'task3')" tabindex="0">3.</li>
-              <li class="tasks__toggle" onclick="openTask(event, 'task4')" onkeydown="openTask1(event, 'task4')" tabindex="0">4.</li>
-              <li class="tasks__toggle" onclick="openTask(event, 'task5')" onkeydown="openTask1(event, 'task5')" tabindex="0">5.</li>
-            </ul>
-          </div>
-          <div class="tasks__wrapper">
-            <h2 class="tasks__title">Основные задачи</h2>
-            <ul class="tasks__list default-list">
-              <li id="task1" class="tasks__item tasks__item--current">
-                <span class="tasks__number">1.</span>
-                <p class="tasks__text">Cоздание благоприятной научной атмосферы для комплексного исследования русского языка и литературы XVIII века в различных аспектах представителями различных филологических специальностей.</p>
-              </li>
-              <li id="task2" class="tasks__item">
-                <span class="tasks__number">2.</span>
-                <p class="tasks__text">Интеграция внутриуниверситетских подразделений и в расширение научных связей Университета с академическими научными учреждениями.</p>
-              </li>
-              <li id="task3" class="tasks__item">
-                <span class="tasks__number">3.</span>
-                <p class="tasks__text">Регулярное издание периодического сборника «Литературная культура России XVIII века», отражающего в первую очередь достижения университетской науки.</p>
-              </li>
-              <li id="task4" class="tasks__item">
-                <span class="tasks__number">4.</span>
-                <p class="tasks__text">Разработка инновационных информационно-поисковых систем по корпусу текстов русской литературы XVIII века и выработка новых методов электронной обработки и описания классических текстов русской литературы.</p>
-              </li>
-              <li id="task5" class="tasks__item">
-                <span class="tasks__number">5.</span>
-                <p class="tasks__text">Интеграция современной академической науки в университетский учебный процесс, создание учебно-методических комплексов и пособий нового поколения разных типов.</p>
-              </li>
-            </ul>
-            <ul class="tasks__slider slider default-list">
-              <li class="slider__item slider__item--current" onclick="openTask(event, 'task1')" onkeydown="openTask1(event, 'task1')" tabindex="0"><span class="visually-hidden">1</span></li>
-              <li class="slider__item" onclick="openTask(event, 'task2')" onkeydown="openTask1(event, 'task2')" tabindex="0"><span class="visually-hidden">2</span></li>
-              <li class="slider__item" onclick="openTask(event, 'task3')" onkeydown="openTask1(event, 'task1')" tabindex="0"><span class="visually-hidden">3</span></li>
-              <li class="slider__item" onclick="openTask(event, 'task4')" onkeydown="openTask1(event, 'task1')" tabindex="0"><span class="visually-hidden">4</span></li>
-              <li class="slider__item" onclick="openTask(event, 'task5')" onkeydown="openTask1(event, 'task1')" tabindex="0"><span class="visually-hidden">5</span></li>
-            </ul>
-          </div>
+
+          <div class="tasks__pagin"></div>
+
+            <div class="tasks__wrapper">
+                <h2 class="tasks__title">Основные задачи</h2>
+                <div class="tasks__swiper-container">
+                    <div class="tasks__swiper-wrapper">
+                        <div class="tasks__swiper-slide">
+                            <span class="tasks__number">1.</span>
+                            <p class="tasks__text">Cоздание благоприятной научной атмосферы для комплексного исследования русского языка и литературы XVIII века в различных аспектах представителями различных филологических специальностей.</p>
+                        </div>
+                        <div class="tasks__swiper-slide">
+                            <span class="tasks__number">2.</span>
+                            <p class="tasks__text">Интеграция внутриуниверситетских подразделений и в расширение научных связей Университета с академическими научными учреждениями.</p>
+                        </div>
+                        <div class="tasks__swiper-slide">
+                            <span class="tasks__number">3.</span>
+                            <p class="tasks__text">Регулярное издание периодического сборника «Литературная культура России XVIII века», отражающего в первую очередь достижения университетской науки.</p>
+                        </div>
+                        <div class="tasks__swiper-slide">
+                            <span class="tasks__number">4.</span>
+                            <p class="tasks__text">Разработка инновационных информационно-поисковых систем по корпусу текстов русской литературы XVIII века и выработка новых методов электронной обработки и описания классических текстов русской литературы.</p>
+                        </div>
+                        <div class="tasks__swiper-slide">
+                            <span class="tasks__number">5.</span>
+                            <p class="tasks__text">Интеграция современной академической науки в университетский учебный процесс, создание учебно-методических комплексов и пособий нового поколения разных типов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
       </section>

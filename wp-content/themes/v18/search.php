@@ -7,7 +7,7 @@
  * @package v18
  */
 
-get_header();
+get_header('page');
 ?>
 
 	<section id="primary" class="content-area">
@@ -15,14 +15,14 @@ get_header();
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="wp-page-header">
 				<h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Search Results for: %s', 'v18' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
-			</header><!-- .page-header -->
+			</header><!-- .wp-page-header -->
 
 			<?php
 			/* Start the Loop */
@@ -51,5 +51,4 @@ get_header();
 	</section><!-- #primary -->
 
 <?php
-get_sidebar();
-get_footer();
+get_footer('all');

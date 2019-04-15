@@ -12,7 +12,7 @@
  * @package v18
  */
 
-get_header();
+get_header('page');
 ?>
 
 	<div id="primary" class="content-area">
@@ -36,5 +36,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
-get_footer();
+get_footer('all');

@@ -3,7 +3,7 @@
  * Template name: Members Template
  */
 
-get_header('main');
+get_header('page');
 ?>
     <section class="heading">
         <div class="heading__wrap heading__wrap--members">

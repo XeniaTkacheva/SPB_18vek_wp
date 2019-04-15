@@ -21,6 +21,7 @@
 		//					echo $metas['Даты'][0];};  ?>
         <!--				</span>-->
 		<?php echo get_post_field('Месяц-или-Период');  ?>
+	    <span> <?php echo get_post_field('Год'); ?></span>
 
         <!--                --><?php //if( isset($metas['Месяц-или-Период']) ){
 		//					echo $metas['Месяц-или-Период'][0];};  ?>

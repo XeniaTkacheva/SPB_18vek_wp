@@ -28,17 +28,25 @@ get_header('page');
             <section class="calendar">
                 <h2 class="visually-hidden">Календарь событий по годам</h2>
                 <div class="calendar__wrapper">
+                    <div class="calendar__arrows">
+                        <div class="calendar__box">
 
-	                <?php
+                        <?php
 
-	                wp_nav_menu( array(
-			                'theme_location' => 'calendar-menu',
-			                'menu_id'        => 'calendar',
-			                'menu_class'     => 'calendar__list default-list',
-                            'fallback_cb'  => '',
-		                )
-	                );
-	                ?>
+                            wp_nav_menu( array(
+                                    'theme_location' => 'calendar-menu',
+                                    'container' => '',
+                                    'menu_id'        => 'calendar',
+                                    'menu_class'     => 'calendar__list default-list',
+                                    'fallback_cb'  => '',
+                                )
+                            );
+                            ?>
+
+                        </div>
+                        <div class="calendar__nav calendar__nav--prev">&#8592;</div>
+                        <div class="calendar__nav calendar__nav--next">&#8594;</div>
+                    </div>
                 </div>
             </section>
 
@@ -49,7 +57,9 @@ get_header('page');
 //		$today = getdate();
 //		$query = new WP_Query( 'year=' . $today["year"]);
 
-        if ( have_posts() ) :
+        if ( have_posts() ) :?>
+            <h3 class="events__subtitle">События за <span>все</span> годы:</h3>
+	        <?php
 
 			/* Start the Loop */
 			while ( have_posts() ) :

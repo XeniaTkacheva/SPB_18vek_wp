@@ -10,9 +10,9 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
+	<header class="wp-page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'v18' ); ?></h1>
-	</header><!-- .page-header -->
+	</header><!-- .wp-page-header -->
 
 	<div class="page-content">
 		<?php

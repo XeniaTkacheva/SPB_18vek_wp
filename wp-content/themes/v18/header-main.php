@@ -24,14 +24,18 @@
 <div class="modal-overlay"></div>
 
 <header class="main-header">
+
 	<div class="main-header__wrapper">
+        <a href="<?php echo esc_url('https://18vekspb-old.ru'); ?>" class="main-header__to-old-site button" title="Перейти к прежнему сайту" target="_blank">К старой версии сайта &#8594;</a>
 		<button class="main-header__nav-toggle nav-toggle nav-toggle--off" type="button">
 			<span class="visually-hidden">Открыть меню</span>
 		</button>
 		<nav class="main-header__nav">
 			<a href="#" class="main-header__logo1">XVIII <span class="dot">.</span></a>
 
-			<?php
+
+
+            <?php
                 wp_nav_menu( array(
                     'theme_location' => 'top-menu',
                     'menu_id'        => 'primary-menu',
@@ -44,17 +48,17 @@
 		</nav>
 		<div class="main-header__container">
 			<div class="main-header__logos">
-				<a class="main-header__logo2">
+				<a href="<?php echo esc_url('https://spbu.ru'); ?>" class="main-header__logo2" target="_blank">
 					<img src="<?php echo esc_url( V18_IMG_DIR . '/logo-big.svg'); ?>" alt="Логотип СПбГУ" width="94" height="27">
 				</a>
-				<a class="main-header__logo3">
+				<a href="<?php echo esc_url('https://phil.spbu.ru'); ?>" class="main-header__logo3" target="_blank">
 					<img src="<?php echo esc_url(V18_IMG_DIR . '/logo-wht.png'); ?>" alt="Логотип ФилФак" width="126" height="33">
 				</a>
 			</div>
 			<div class="main-header__heading">
 				<h1 class="main-header__title">Русский <br><span class="main-header__num">XVIII</span> век<span class="dot">.</span></h1>
 				<h2 class="main-header__subtitle">*Научно-исследовательский филологический семинар</h2>
-				<a href="#" class="main-header__btn button">Перейти к публикациям</a>
+				<a href="<?php echo esc_url(get_template_directory_uri() . '/publications?#publications'); ?>" class="main-header__btn button">Перейти к публикациям</a>
 			</div>
 		</div>
 	</div>

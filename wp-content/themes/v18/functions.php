@@ -123,12 +123,15 @@ add_action( 'widgets_init', 'v18_widgets_init' );
  */
 define('V18_THEME_ROOT', get_template_directory_uri());
 define('V18_CSS_DIR', V18_THEME_ROOT . '/assets/css');
+define('V18_CSSWP_DIR', V18_THEME_ROOT . '/assets/css-wp');
 define('V18_JS_DIR', V18_THEME_ROOT . '/assets/js');
 define('V18_IMG_DIR', V18_THEME_ROOT . '/assets/img');
 define('V18_FONTS_DIR', V18_THEME_ROOT . '/assets/fonts');
 
 function v18_scripts() {
+	wp_enqueue_style( 'v18-style-swiper', V18_JS_DIR . '/swiper.css');
 	wp_enqueue_style( 'v18-style', V18_CSS_DIR . '/style.min.css');
+	wp_enqueue_style( 'v18-style-wp', V18_CSSWP_DIR . '/css-wp.css');
 
 	wp_enqueue_script( 'v18-navigation', V18_JS_DIR . '/navigation.js', array(), '20151215', true );
 
@@ -137,6 +140,7 @@ function v18_scripts() {
 
 	wp_enqueue_script( 'v18-picture-js', V18_JS_DIR . '/picturefill.min.js', array(), '1.0.0', true );
 
+	wp_enqueue_script( 'v18-js-swiper', V18_JS_DIR . '/swiper.min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'v18-js', V18_JS_DIR . '/main.js', array(), '1.0.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

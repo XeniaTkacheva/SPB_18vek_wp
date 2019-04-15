@@ -1,0 +1,97 @@
+.main-header__wrapper,
+.page-header__wrapper {
+    position: relative;
+}
+.main-header__to-old-site,
+.page-header__to-old-site {
+    font-size: 14px;
+    font-family: "Lato", "Arial", sans-serif;
+    text-decoration: underline;
+    border-color: transparent;
+    position: absolute;
+    right: 20px;
+    top: 65px;
+    color: #d0ad4a;
+    font-weight: 400;
+    padding: 12px;
+    background-color: rgba(231,214,164,0.15);
+    z-index: 24;
+}
+
+.main-header__to-old-site:hover,
+.page-header__to-old-site:hover {
+    color:#92857A;
+}
+.main-header__to-old-site:active,
+.page-header__to-old-site:active {
+    background-color: rgba(231,214,164,0.1);
+}
+
+.entry-content {
+    margin-bottom: 50px;
+}
+.content-area {
+    padding: 0 9px;
+}
+.calendar__arrows {
+    display: flex;
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.wp-post-image {
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .page-header__to-old-site,
+    .main-header__to-old-site {
+        left: auto;
+        right: 20px;
+        top: 20px;
+        z-index: 50;
+    }
+    .events__subtitle {
+        padding-left: 0;
+    }
+    .content-area {
+        padding: 0 84px;
+    }
+    .calendar__arrows {
+        width: 723px;
+        margin-bottom: 0;
+    }
+
+}
+@media (min-width: 1024px) {
+    .page-header__to-old-site,
+    .main-header__to-old-site {
+      top: 48px;
+    }
+    .content-area {
+        padding: 0 106px;
+    }
+    .calendar__arrows {
+        width: 980px;
+
+    }
+}
+@media (min-width: 1170px) {
+    .page-header__to-old-site {
+        left: auto;
+        right: 20px;
+        top: 20px;
+    }
+    .main-header__to-old-site {
+        left: 90px;
+        right: auto;
+        top: 90px;
+        color: #000000;
+    }
+    .calendar__arrows {
+        width: auto;
+        max-width: 1146px;
+    }
+}
