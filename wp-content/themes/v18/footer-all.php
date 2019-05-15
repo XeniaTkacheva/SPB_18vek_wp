@@ -33,6 +33,7 @@
 				<p class="copyright__text">© Факультет филологии и искусств СПбГУ, 2008-2019</p>
 				<p class="copyright__text">© Филологический факультет СПбГУ, 2010-2019</p>
 			</div>
+            <a href="<?php echo esc_url('https://18vekspb-old.ru'); ?>" class="page-footer__to-old-site" title="Перейти к прежнему сайту" target="_blank">К старой версии сайта &#8594;</a>
 			<a class="copyright__link" href="<?php echo esc_url_raw('https://www.behance.net/anna_novik'); ?>" target="_blank">
 				Designed by Anna Novik
 			</a>

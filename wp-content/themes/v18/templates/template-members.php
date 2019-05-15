@@ -69,7 +69,7 @@ get_header('page');
                         <li class="members__about">
                             <h3 class="members__name">Наталия Владимировна <br>Карева</h3>
                             <p class="members__degree">кандидат филологических наук</p>
-                            <p class="members__text">Научный сотрудник отдела «Словарь языка М.&nbsp;В.&nbsp;Ломоносова» ИЛИ РАН. </p>
+                            <p class="members__text">Старший научный сотрудник отдела «Словарь языка М.&nbsp;В.&nbsp;Ломоносова» ИЛИ РАН. </p>
                         </li>
                     </ul>
                     <ul class="members__slider slider default-list">

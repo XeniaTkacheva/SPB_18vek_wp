@@ -22,7 +22,7 @@ get_header('page');
 					<div class="methods__profile default-list">
 						<p class="methods__authors">Бухаркин&nbsp;П.&nbsp;Е., Гуськов&nbsp;Н.&nbsp;А., Матвеев&nbsp;Е.&nbsp;М., Пономарева&nbsp;М.&nbsp;В., Руднев&nbsp;Д.&nbsp;В., Тверьянович&nbsp;К.&nbsp;Ю., Тираспольская&nbsp;А.&nbsp;Ю.</p>
 						<h3 class="methods__title">«История русской литературы и культуры XVIII века» на основе лекций проф. П.&nbsp;Е.&nbsp;Бухаркина.</h3>
-						<a href="#" class="methods__link button">Подробнее</a>
+						<a href="<?php echo esc_url('https://18vek.spb.ru/methods/umk1'); ?>" class="methods__link button">Подробнее</a>
 					</div>
 				</li>
 				<li id="method2" class="methods__item methods__item--current">
@@ -30,7 +30,7 @@ get_header('page');
 					<div class="methods__profile default-list">
 						<p class="methods__authors">Бухаркин&nbsp;П.&nbsp;Е., Гуськов&nbsp;Н.&nbsp;А., Матвеев&nbsp;Е.&nbsp;М., Пономарева&nbsp;М.&nbsp;В., Тверьянович&nbsp;К.&nbsp;Ю., Тираспольская&nbsp;А.&nbsp;Ю.</p>
 						<h3 class="methods__title">«История русской литературы XVIII века» для сетевого и дистанционного обучения на интернет портале «Вузовская русистика» (в системе дистанционного обучения Sakai, sakai.spbu.ru)</h3>
-						<a href="#" class="methods__link button">Подробнее</a>
+						<a href="<?php echo esc_url('https://18vek.spb.ru/methods/umk2'); ?>" class="methods__link button">Подробнее</a>
 					</div>
 				</li>
 				<li id="method4" class="methods__item methods__item--current">
@@ -38,7 +38,7 @@ get_header('page');
 					<div class="methods__profile default-list">
 						<p class="methods__authors"> Бухаркин&nbsp;П.&nbsp;Е., Гуськов&nbsp;Н.&nbsp;А., Матвеев&nbsp;Е.&nbsp;М., Пономарева&nbsp;М.&nbsp;В., Тираспольская&nbsp;А.&nbsp;Ю.</p>
 						<h3 class="methods__title">Лекции к онлайн-курсу «Русская литература XVIII века: пути развития и культурно-исторический контекст».</h3>
-						<a href="#" class="methods__link button">Подробнее</a>
+						<a href="<?php echo esc_url('https://18vek.spb.ru/methods/umk3'); ?>" class="methods__link button">Подробнее</a>
 					</div>
 				</li>
 

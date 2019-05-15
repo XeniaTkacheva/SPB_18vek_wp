@@ -18,42 +18,42 @@ get_header('page');
 			<ul class="publications__list default-list">
 
 				<li class="publications__item">
-					<a href="#" class="publications__link">
+					<a href="<?php echo esc_url('https://18vek.spb.ru/publications/publications-list#sets-of-articles'); ?>" class="publications__link">
 						<h3 class="publications__group">
 							Сборники статей
 						</h3>
 					</a>
 				</li>
 				<li class="publications__item">
-					<a href="#" class="publications__link">
+                    <a href="<?php echo esc_url('https://18vek.spb.ru/publications/publications-list#dictionaries'); ?>" class="publications__link">
 						<h3 class="publications__group">
 							Энциклопедии и&nbsp;словари
 						</h3>
 					</a>
 				</li>
 				<li class="publications__item">
-					<a href="#" class="publications__link">
+                    <a href="<?php echo esc_url('https://18vek.spb.ru/publications/publications-list#monographs'); ?>" class="publications__link">
 						<h3 class="publications__group">
 							Монографии
 						</h3>
 					</a>
 				</li>
 				<li class="publications__item">
-					<a href="#" class="publications__link">
+                    <a href="<?php echo esc_url('https://18vek.spb.ru/publications/publications-list#bibliographies'); ?>" class="publications__link">
 						<h3 class="publications__group">
 							Библиографические издания
 						</h3>
 					</a>
 				</li>
 				<li class="publications__item">
-					<a href="#" class="publications__link">
+                    <a href="<?php echo esc_url('https://18vek.spb.ru/publications/publications-list#educational'); ?>" class="publications__link">
 						<h3 class="publications__group">
 							Учебные издания
 						</h3>
 					</a>
 				</li>
 				<li class="publications__item">
-					<a href="#" class="publications__link">
+                    <a href="<?php echo esc_url('https://18vek.spb.ru/publications/publications-list#reviews-on-publications'); ?>" class="publications__link">
 						<h3 class="publications__group">
 							Рецензии на&nbsp;публикации
 						</h3>

@@ -16,6 +16,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 	<?php wp_head(); ?>
 </head>
@@ -26,11 +33,11 @@
 <header class="main-header">
 
 	<div class="main-header__wrapper">
-        <a href="<?php echo esc_url('https://18vekspb-old.ru'); ?>" class="main-header__to-old-site button" title="Перейти к прежнему сайту" target="_blank">К старой версии сайта &#8594;</a>
 		<button class="main-header__nav-toggle nav-toggle nav-toggle--off" type="button">
 			<span class="visually-hidden">Открыть меню</span>
 		</button>
 		<nav class="main-header__nav">
+            <a href="#" class="main-header__logo0"><img src="<?php echo esc_url(V18_IMG_DIR . '/logo-0-1@1x.jpg'); ?>" srcset="<?php echo esc_url(V18_IMG_DIR . '/logo-0-1@2x.jpg'); ?>  2x" alt="Логотип 18 век" class="main-header__image" width="75" height="78"></a>
 			<a href="#" class="main-header__logo1">XVIII <span class="dot">.</span></a>
 
 

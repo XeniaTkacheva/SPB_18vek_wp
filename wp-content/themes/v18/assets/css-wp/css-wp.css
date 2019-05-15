@@ -2,36 +2,78 @@
 .page-header__wrapper {
     position: relative;
 }
-.main-header__to-old-site,
-.page-header__to-old-site {
+.page-footer__to-old-site {
+    display: block;
+    text-align: center;
     font-size: 14px;
     font-family: "Lato", "Arial", sans-serif;
-    text-decoration: underline;
+    text-decoration: none;
     border-color: transparent;
-    position: absolute;
-    right: 20px;
-    top: 65px;
-    color: #d0ad4a;
+    color: #c4c4c4;
     font-weight: 400;
-    padding: 12px;
-    background-color: rgba(231,214,164,0.15);
+    padding: 20px 12px;
+    background-color: transparent;
     z-index: 24;
 }
 
-.main-header__to-old-site:hover,
-.page-header__to-old-site:hover {
+.page-footer__to-old-site:hover {
     color:#92857A;
 }
-.main-header__to-old-site:active,
-.page-header__to-old-site:active {
-    background-color: rgba(231,214,164,0.1);
+.page-footer__to-old-site:active {
+    opacity: 0.7;
 }
 
 .entry-content {
     margin-bottom: 50px;
 }
+.entry-title {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 42px;
+}
+.entry-content h3,
+.entry-content h2 {
+    margin-bottom: 30px;
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+}
+.entry-content h2 {
+    font-size: 29px;
+    line-height: 36px;
+}
+
+.entry-content ul {
+    list-style: none;
+}
+/*.entry-content li {*/
+/*    list-style: none;*/
+/*    padding-bottom: 30px;*/
+/*    font-family: "Lato", "Arial", sans-serif;*/
+/*    font-style: italic;*/
+/*    font-weight: normal;*/
+/*    font-size: 16px;*/
+/*    line-height: 21px;*/
+
+/*    color: #000000;*/
+/*}*/
 .content-area {
     padding: 0 9px;
+    max-width: 1146px;
+    margin: 0 auto;
+}
+.content-area a {
+    color: #d0ad4a;
+    line-height: 25px;
+}
+.content-area a:hover {
+    color: #625444;
+}
+.wp-block-image img {
+    margin: 0 auto;
 }
 .calendar__arrows {
     display: flex;
@@ -39,20 +81,58 @@
     width: auto;
     height: auto;
     overflow: hidden;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 .wp-post-image {
     margin: 0 auto;
 }
+.events__about p>a {
+    color: #d0ad4a;
+}
+
+.events__about p>a:hover {
+    color: #625444;
+}
+
+.methods__umk-subtitle,
+.methods__umk-inner-title {
+    margin-bottom: 30px;
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+
+.methods__umk-inner-title {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.methods__umk-list,
+.methods__umk-list li>ul{
+    list-style: none;
+    margin: 20px 0 40px;
+}
+
+.methods__umk-list li {
+    margin-bottom: 10px;
+}
+.methods__umk-list strong {
+    padding-top: 10px;
+    font-weight: 400;
+}
+.publications__names {
+    list-style: none;
+}
+.publications__names>li {
+
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 21px;
+}
 @media (min-width: 768px) {
-    .page-header__to-old-site,
-    .main-header__to-old-site {
-        left: auto;
-        right: 20px;
-        top: 20px;
-        z-index: 50;
-    }
     .events__subtitle {
         padding-left: 0;
     }
@@ -63,13 +143,13 @@
         width: 723px;
         margin-bottom: 0;
     }
+    .entry-title {
+        font-size: 56px;
+        line-height: 67px;
+    }
 
 }
 @media (min-width: 1024px) {
-    .page-header__to-old-site,
-    .main-header__to-old-site {
-      top: 48px;
-    }
     .content-area {
         padding: 0 106px;
     }
@@ -79,19 +159,14 @@
     }
 }
 @media (min-width: 1170px) {
-    .page-header__to-old-site {
-        left: auto;
-        right: 20px;
-        top: 20px;
-    }
-    .main-header__to-old-site {
-        left: 90px;
-        right: auto;
-        top: 90px;
-        color: #000000;
+    .page-footer__to-old-site {
+        padding: 0 12px;
     }
     .calendar__arrows {
         width: auto;
         max-width: 1146px;
+    }
+    .content-area {
+        padding: 0 146px;
     }
 }
